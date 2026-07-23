@@ -1,0 +1,187 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f5f8;
+}
+
+.booking{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.booking-container{
+    width:65%;
+    max-width:940px;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    display:grid;
+    grid-template-columns:45% 55%;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+/* LEFT */
+
+.booking-left{
+    border-right:1px solid #ddd;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.logo{
+    padding:50px 30px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+.logo h2{
+    color:#0d4da8;
+    font-size:38px;
+    font-weight:700;
+}
+
+.booking-info{
+    padding:40px;
+}
+
+.booking-info h4{
+    color:#666;
+    font-size:14px;
+    margin-bottom:10px;
+	margin-top:-10px;
+}
+
+.booking-info h1{
+    font-size:25px;
+    color:#0b2345;
+    margin-bottom:35px;
+}
+
+.info p{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    margin:22px 0;
+    font-size:20px;
+    color:#333;
+    line-height:1.7;
+}
+
+.info i{
+    color:#0b2345;
+    font-size:13px;
+    margin-top:5px;
+}
+
+.booking-footer{
+    padding:35px 40px;
+    border-top:1px solid #ddd;
+}
+
+.booking-footer a{
+    text-decoration:none;
+    color:#0d4da8;
+    margin-right:30px;
+    font-size:17px;
+}
+
+/* RIGHT */
+
+.booking-right{
+    padding:40px;
+}
+
+.booking-right h2{
+    font-size:30px;
+    color:#0b2345;
+    margin-bottom:40px;
+}
+
+.calendar-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.calendar-header h3{
+    font-size:28px;
+    color:#0b2345;
+	margin-left:140px;
+	margin-top:-30px;
+}
+
+.calendar-header button{
+    width:45px;
+    height:45px;
+    border:none;
+    background:#f3f5f8;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.weekdays,
+.calendar{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    text-align:center;
+}
+
+.weekdays{
+    margin-bottom:20px;
+}
+
+.weekdays span{
+    font-weight:600;
+    color:#666;
+    padding:10px;
+}
+
+.calendar span{
+    padding:18px;
+    margin:4px;
+    border-radius:50%;
+    cursor:pointer;
+    transition:.3s;
+    font-size:18px;
+}
+
+.calendar span:hover{
+    background:#e8f1ff;
+}
+
+.calendar .active{
+    background:#0d6efd;
+    color:#fff;
+}
+
+.timezone{
+    margin-top:50px;
+}
+
+.timezone h4{
+    font-size:22px;
+    color:#0b2345;
+    margin-bottom:15px;
+}
+
+.timezone p{
+    color:#444;
+    font-size:18px;
+}
+
+.timezone i{
+    margin-right:10px;
+    color:#0d6efd;
+}
